@@ -2,11 +2,18 @@ import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import FunctionAsProp from "./patterns/functionAsProp/functionAsProp";
+import RenderFunction from "./patterns/renderFunction/renderFunction";
 
 class App extends Component {
 
   getTestData = () => {
     return 'test text'
+  };
+
+  renderFunction = (text) => {
+    return (
+      <b>{text}</b>
+    );
   };
 
   render() {
@@ -16,6 +23,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1>Patterns</h1>
           <FunctionAsProp getData={this.getTestData}/>
+          <RenderFunction renderItem={this.renderFunction}/>
         </header>
       </div>
     );
