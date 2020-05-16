@@ -6,6 +6,7 @@ import RenderFunction from "./patterns/renderFunction/renderFunction";
 import Children from "./patterns/children/children";
 import ErrorBoundary from "./patterns/errorBoundary/errorBoundary";
 import ErrorBoundaryExample from "./patterns/errorBoundary/errorBoundaryExample";
+import ErrorBoundaryDescription from "./patterns/errorBoundary/errorBoundaryDescription";
 
 class App extends Component {
 
@@ -25,17 +26,23 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1>Patterns</h1>
+
           <FunctionAsProp getData={this.getTestData}/>
+
           <RenderFunction renderItem={this.renderFunction}/>
+
           <Children>
             {(item) => (<b>{item}</b>)}
           </Children>
-          <ErrorBoundary>
-            <ErrorBoundaryExample/>
-          </ErrorBoundary>
-          <ErrorBoundary>
-            <ErrorBoundaryExample isHasError={true}/>
-          </ErrorBoundary>
+
+          <ErrorBoundaryDescription>
+            <ErrorBoundary>
+              <ErrorBoundaryExample/>
+            </ErrorBoundary>
+            <ErrorBoundary>
+              <ErrorBoundaryExample isHasError={true}/>
+            </ErrorBoundary>
+          </ErrorBoundaryDescription>
         </header>
       </div>
     );
