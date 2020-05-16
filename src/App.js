@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import FunctionAsProp from "./patterns/functionAsProp/functionAsProp";
 import RenderFunction from "./patterns/renderFunction/renderFunction";
+import Children from "./patterns/children/children";
 
 class App extends Component {
 
@@ -24,6 +25,9 @@ class App extends Component {
           <h1>Patterns</h1>
           <FunctionAsProp getData={this.getTestData}/>
           <RenderFunction renderItem={this.renderFunction}/>
+          <Children>
+            {(item) => (<b>{item}</b>)}
+          </Children>
         </header>
       </div>
     );
