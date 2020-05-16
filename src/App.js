@@ -4,6 +4,8 @@ import './App.css';
 import FunctionAsProp from "./patterns/functionAsProp/functionAsProp";
 import RenderFunction from "./patterns/renderFunction/renderFunction";
 import Children from "./patterns/children/children";
+import ErrorBoundary from "./patterns/errorBoundary/errorBoundary";
+import ErrorBoundaryExample from "./patterns/errorBoundary/errorBoundaryExample";
 
 class App extends Component {
 
@@ -28,6 +30,12 @@ class App extends Component {
           <Children>
             {(item) => (<b>{item}</b>)}
           </Children>
+          <ErrorBoundary>
+            <ErrorBoundaryExample/>
+          </ErrorBoundary>
+          <ErrorBoundary>
+            <ErrorBoundaryExample isHasError={true}/>
+          </ErrorBoundary>
         </header>
       </div>
     );
