@@ -7,6 +7,7 @@ import Children from "./patterns/children/children";
 import ErrorBoundary from "./patterns/errorBoundary/errorBoundary";
 import ErrorBoundaryExample from "./patterns/errorBoundary/errorBoundaryExample";
 import ErrorBoundaryDescription from "./patterns/errorBoundary/errorBoundaryDescription";
+import HocDesription from "./patterns/HOC/hocDesription";
 
 class App extends Component {
 
@@ -35,14 +36,16 @@ class App extends Component {
             {(item) => (<b>{item}</b>)}
           </Children>
 
-          <ErrorBoundaryDescription>
-            <ErrorBoundary>
-              <ErrorBoundaryExample/>
-            </ErrorBoundary>
-            <ErrorBoundary>
-              <ErrorBoundaryExample isHasError={true}/>
-            </ErrorBoundary>
-          </ErrorBoundaryDescription>
+          {/*<ErrorBoundaryDescription>*/}
+          {/*  <ErrorBoundary>*/}
+          {/*    <ErrorBoundaryExample/>*/}
+          {/*  </ErrorBoundary>*/}
+          {/*  <ErrorBoundary>*/}
+          {/*    <ErrorBoundaryExample isHasError={true}/>*/}
+          {/*  </ErrorBoundary>*/}
+          {/*</ErrorBoundaryDescription>*/}
+
+          <HocDesription/>
         </header>
       </div>
     );
