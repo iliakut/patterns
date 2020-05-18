@@ -36,14 +36,14 @@ class App extends Component {
             {(item) => (<b>{item}</b>)}
           </Children>
 
-          {/*<ErrorBoundaryDescription>*/}
-          {/*  <ErrorBoundary>*/}
-          {/*    <ErrorBoundaryExample/>*/}
-          {/*  </ErrorBoundary>*/}
-          {/*  <ErrorBoundary>*/}
-          {/*    <ErrorBoundaryExample isHasError={true}/>*/}
-          {/*  </ErrorBoundary>*/}
-          {/*</ErrorBoundaryDescription>*/}
+          <ErrorBoundaryDescription>
+            <ErrorBoundary>
+              <ErrorBoundaryExample/>
+            </ErrorBoundary>
+            <ErrorBoundary>
+              <ErrorBoundaryExample isHasError={true}/>
+            </ErrorBoundary>
+          </ErrorBoundaryDescription>
 
           <HocDesription/>
         </header>
