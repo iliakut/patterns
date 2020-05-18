@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 
 const withData = (View, getData) => {
-  return class extends Component {
+  return class withData extends Component {
     state = {
       data: null
     };
@@ -14,8 +14,6 @@ const withData = (View, getData) => {
     }
 
     render() {
-      console.log(this.props)
-      console.log('render')
       const {data} = this.state;
 
       if (!data) {
