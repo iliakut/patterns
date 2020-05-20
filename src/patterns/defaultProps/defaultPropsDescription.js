@@ -7,7 +7,7 @@ const DefaultPropsDescription = () => {
     <div>
       <h2>Default Props</h2>
       <p>
-        Контекст разработан для передачи данных, которые можно назвать «глобальными»<br/>
+        Можно устанавливать дефолтные значнеия пропсов static defaultProps = ... или ComponentName.defaultProps<br/>
       </p>
       Пример:
       <DefaultPropsFunction/>
