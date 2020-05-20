@@ -9,6 +9,7 @@ import ErrorBoundaryExample from "./patterns/errorBoundary/errorBoundaryExample"
 import ErrorBoundaryDescription from "./patterns/errorBoundary/errorBoundaryDescription";
 import HocDesription from "./patterns/HOC/hocDesription";
 import ContextDescription from "./patterns/context/contextDescription";
+import DefaultPropsDescription from "./patterns/defaultProps/defaultPropsDescription";
 
 class App extends Component {
 
@@ -49,6 +50,8 @@ class App extends Component {
           <HocDesription/>
 
           <ContextDescription/>
+
+          <DefaultPropsDescription/>
         </header>
       </div>
     );
